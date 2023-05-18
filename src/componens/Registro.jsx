@@ -62,7 +62,7 @@ const Registro = ({
         imagen:
           "https://assets.stickpng.com/images/585e4beacb11b227491c3399.png",
       };
-      let res = await axios.post("http://localhost:3001/nuevo" || "https://mejora-web.vercel.app/nuevo", data);
+      let res = await axios.post("http://localhost:3001/nuevo" || "http://mejora-web.vercel.app/nuevo", data);
 
       setMuestraBienvenida(true);
       setContraseña("");
