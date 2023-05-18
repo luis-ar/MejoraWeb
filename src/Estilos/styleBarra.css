@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedorBarra {
+  background-color: #3b82f6;
+  margin: 0;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.infoBarra {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.imagenBarra {
+  border-radius: 50%;
+  width: 3rem;
+  margin-right: 10px;
+  border: 3px solid black;
+}
+.nombreBarra {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+.empresaBarra {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.logoEmpresa {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.nombreEmpresaBarra {
+  text-transform: uppercase;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.infoBarra:hover {
+  background-color: #3c67ad;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .nombreEmpresaBarra {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  .logoEmpresa {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .empresaBarra {
+    margin-left: 0.5rem;
+  }
+  .infoBarra {
+    margin-right: 0.5rem;
+  }
+}

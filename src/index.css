@@ -1,0 +1,238 @@
+.madre {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232, 240, 236);
+  position: relative;
+}
+
+.contenedor {
+  background-color: rgb(235, 239, 241);
+  width: 600px;
+  min-height: 650px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+.prueba {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+.datos {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.diseños {
+  text-align: center;
+}
+.contraseña {
+  display: flex;
+  justify-content: end;
+}
+.continuar:hover {
+  opacity: 0.7;
+  cursor: pointer !important;
+}
+.caja1 {
+  display: flex;
+  justify-content: space-between;
+}
+.continuar {
+  background-color: #1a73e8;
+  margin: 0 auto;
+  padding: 4px;
+  border: 4px solid black !important;
+  margin-top: 3% !important;
+  margin-bottom: 5px !important;
+}
+.bienvenidoH2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+  margin: 0;
+  margin-top: 15px;
+  font-weight: 700;
+}
+.correoH5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.inputCorreo {
+  width: 100%;
+  padding-left: 30px;
+  border-radius: 10px;
+}
+.fa-eye {
+  position: absolute;
+  right: 0;
+  top: 36%;
+  border: none;
+  height: 20px;
+  background-color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.inputPassword {
+  width: 100%;
+  padding-left: 30px;
+  border-radius: 10px;
+}
+
+.password_div {
+  height: 50px;
+  position: relative;
+  display: flex;
+}
+.olvidasteH5 {
+  font-weight: 800;
+  font-size: 20px;
+  color: blue;
+  margin: 15px 0;
+  text-decoration: none;
+}
+.datosBTN {
+  width: 100%;
+  color: white;
+  background-color: black;
+  margin-bottom: 2%;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+.ultimaParte {
+  width: 100%;
+  height: 10px;
+  border-bottom: 1px solid rgb(144, 141, 141);
+  text-align: center;
+}
+.rayaSpan {
+  font-size: 16px;
+  background-color: rgb(235, 239, 241);
+  padding: 0px 7px;
+  color: rgb(144, 141, 141);
+}
+.rayita {
+  vertical-align: inherit;
+}
+
+.imagenes {
+  margin-right: 10px;
+}
+.NuevaCuenta {
+  color: blue;
+}
+.claveH5 {
+  margin-top: 20px;
+}
+.iconoLogo {
+  margin-right: 10px;
+}
+.datosBTN:hover {
+  background-color: rgb(33, 32, 32);
+}
+.olvidasteH5:hover {
+  color: #1048a4;
+}
+.iconos {
+  position: absolute;
+  left: 0;
+  top: 39%;
+  border: none;
+  height: 20px;
+  margin-left: 10px;
+  color: rgb(153, 156, 156);
+}
+
+.NuevaCuenta:hover {
+  cursor: pointer;
+}
+.contenedorCerrar {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  margin-right: 20px;
+  width: 30px;
+  justify-content: end;
+  padding: 0;
+}
+
+/* ///// componente Error */
+.componenteError {
+  text-align: center;
+  margin-top: 1rem /* 16px */;
+
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-weight: 700;
+  padding: 0.75rem /* 12px */;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  font-size: 30px;
+}
+.nombreNosotros {
+  font-size: 15px;
+}
+
+@media (max-width: 500px) {
+  .datosBTN {
+    font-size: 15px;
+  }
+  .datos {
+    font-size: 15px;
+  }
+  .inputPassword {
+    font-size: 13px;
+  }
+  .inputCorreo {
+    font-size: 13px;
+  }
+  .registroEnlace {
+    font-size: 17px;
+  }
+  .olvidasteH5 {
+    font-size: 17px;
+  }
+  .bienvenidoH2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .correoH5 {
+    font-size: 15px;
+  }
+  .continuar {
+    font-size: 13px;
+    text-align: center;
+    padding-right: 10px;
+  }
+  .contenedorCerrar {
+    width: 22px;
+  }
+  .componenteError {
+    font-size: 11px;
+  }
+  .registroEnlace {
+    font-size: 15px;
+    text-align: center;
+  }
+}

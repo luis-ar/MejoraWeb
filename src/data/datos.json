@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan",
+    "correo": "juan@gmail.com",
+    "password": "juan123",
+    "imagen": "https://assets.stickpng.com/images/585e4beacb11b227491c3399.png"
+  },
+  {
+    "id": 2,
+    "nombre": "María",
+    "correo": "maria@gmail.com",
+    "password": "maria123",
+    "imagen": "https://assets.stickpng.com/images/585e4beacb11b227491c3399.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Pedro",
+    "correo": "pedro@gmail.com",
+    "password": "pedro123",
+    "imagen": "https://assets.stickpng.com/images/585e4beacb11b227491c3399.png"
+  }
+]
