@@ -185,9 +185,9 @@ const Conoce = ({ setRegistro, setNosotros }) => {
               <div className="face back">
                 <h3>Analisis</h3>
                 <p>
-                  es un país entre los Estados Unidos y América Central,
-                  conocido por las playas en el Pacífico y el golfo de México, y
-                  su diverso paisaje de montañas, desiertos y selvas.
+                  Se pueden identificar ineficiencias o gastos innecesarios,
+                  esto puede llevar a la implementación de medidas de reducción
+                  de costos
                 </p>
                 <div className="link"></div>
               </div>
@@ -202,9 +202,9 @@ const Conoce = ({ setRegistro, setNosotros }) => {
               <div className="face back">
                 <h3>Gestión</h3>
                 <p>
-                  es un país entre los Estados Unidos y América Central,
-                  conocido por las playas en el Pacífico y el golfo de México, y
-                  su diverso paisaje de montañas, desiertos y selvas.
+                  Permite tener un mayor control sobre los recursos financieros
+                  de la empresa, al establecer políticas claras, procesos de
+                  aprobación y límites de gastos
                 </p>
                 <div className="link"></div>
               </div>
@@ -219,9 +219,9 @@ const Conoce = ({ setRegistro, setNosotros }) => {
               <div className="face back">
                 <h3>Administración</h3>
                 <p>
-                  es un país entre los Estados Unidos y América Central,
-                  conocido por las playas en el Pacífico y el golfo de México, y
-                  su diverso paisaje de montañas, desiertos y selvas.
+                  Involucra la creación de presupuestos detallados que asignan
+                  los recursos financieros de manera adecuada, esto permite
+                  establecer límites y metas de gastos
                 </p>
                 <div className="link"></div>
               </div>

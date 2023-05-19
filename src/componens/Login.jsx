@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import Error from "./Error";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import GoogleAuth from "./GoogleAuth";
-import datos from "../../Node-login/datos1.json";
+import datos from "../data/datos.json";
+
+import { useEffect } from "react";
 import PanelBienvenida from "./PanelBienvenida";
 // npm i -D tailwindcss postcss autoprefixer: instalar tailwind
 
@@ -25,6 +27,7 @@ const Login = ({
   setImagenUsuario,
   imagenUsuario,
   setMuestraPrograma,
+  setCopiaCorreo,
 }) => {
   const clienteId =
     "565890216083-h7lapvn1hjrk6umehog5audrpqcuolbr.apps.googleusercontent.com";
@@ -57,14 +60,15 @@ const Login = ({
     }
     if (pase) {
       const resultado = datos.filter(
-        (dato) => dato.correo == correo && dato.contraseña == contraseña
+        (dato) => dato.correo == correo && dato.password == contraseña
       );
       if (resultado.length > 0) {
         resultado.map(async (item) => {
           const imgUser = await item.imagen;
-          setNombreUsuario(item.nombreUsuario);
+          setNombreUsuario(item.nombre);
           setImagenUsuario(imgUser);
           setMuestraBienvenida(true);
+          setCopiaCorreo(correo);
           setMensaje([]);
           setContraseña("");
           setCorreo("");
@@ -168,6 +172,7 @@ const Login = ({
                   setRegistro={setRegistro}
                   setNosotros={setNosotros}
                   setImagenUsuario={setImagenUsuario}
+                  setCopiaCorreo={setCopiaCorreo}
                 />
               </GoogleOAuthProvider>
             </div>

@@ -5,6 +5,7 @@ import Conoce from "./Informacion/Conoce";
 import BarraPresentacion from "./componens/BarraPresentacion";
 function App() {
   const [correo, setCorreo] = useState("");
+  const [copiaCorreo, setCopiaCorreo] = useState("");
   const [contraseña, setContraseña] = useState("");
   const [mensaje, setMensaje] = useState([]);
   const [registro, setRegistro] = useState(false);
@@ -19,6 +20,11 @@ function App() {
     <>
       {muestraPrograma ? (
         <BarraPresentacion
+          setMuestraPrograma={setMuestraPrograma}
+          setCopiaCorreo={setCopiaCorreo}
+          copiaCorreo={copiaCorreo}
+          setImagenUsuario={setImagenUsuario}
+          setNombreUsuario={setNombreUsuario}
           imagenUsuario={imagenUsuario}
           nombreUsuario={nombreUsuario}
         />
@@ -40,6 +46,7 @@ function App() {
           setImagenUsuario={setImagenUsuario}
           imagenUsuario={imagenUsuario}
           setMuestraPrograma={setMuestraPrograma}
+          setCopiaCorreo={setCopiaCorreo}
         />
       ) : !nosotros ? (
         <Separador
@@ -54,12 +61,6 @@ function App() {
           recuperar={recuperar}
           setNombreUsuario={setNombreUsuario}
           nombreUsuario={nombreUsuario}
-          setMuestraBienvenida={setMuestraBienvenida}
-          muestraBienvenida={muestraBienvenida}
-          setImagenUsuario={setImagenUsuario}
-          imagenUsuario={imagenUsuario}
-          setMuestraPrograma={setMuestraPrograma}
-
         />
       ) : (
         <Conoce setNosotros={setNosotros} setRegistro={setRegistro} />

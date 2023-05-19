@@ -53,6 +53,80 @@
   cursor: pointer;
 }
 
+.salirUsuario {
+  max-width: 25rem;
+  min-width: 20rem;
+  height: 10rem;
+  background-color: rgb(214, 217, 219);
+  position: absolute;
+  right: 0;
+  border: 3px solid black;
+  display: none;
+}
+.barraSuperior {
+  background-color: rgb(229, 232, 232);
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+}
+.datosBarra {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.datosUsuario {
+  color: #0d61e8;
+}
+.datosGenerales {
+  display: flex;
+  align-items: center;
+  height: 75%;
+}
+.datosEspecificos {
+  margin: 0 auto;
+  align-items: center;
+}
+.datosEspecificos h2 {
+  margin-bottom: 10px;
+}
+.datosGeneralesImagen {
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+}
+.contenedorImagenDatos {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.contenedorDatosUsuario {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.correo {
+  font-size: 20px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+/* boton salir*/
+.btnBotonSalir:hover {
+  cursor: pointer;
+  background-color: rgb(169, 174, 174);
+}
+
 @media screen and (max-width: 500px) {
   .nombreEmpresaBarra {
     font-size: 15px;
@@ -62,10 +136,37 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+  .imagenBarra {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
   .empresaBarra {
     margin-left: 0.5rem;
   }
   .infoBarra {
     margin-right: 0.5rem;
+  }
+  .salirUsuario {
+    max-width: 17rem;
+    min-width: 10rem;
+    height: 8rem;
+  }
+
+  .datosBarra {
+    font-size: 12px;
+  }
+
+  .datosGeneralesImagen {
+    border-radius: 50%;
+    margin: 2px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .contenedorDatosUsuario {
+    font-size: 12px;
+  }
+  .correo {
+    font-size: 12px;
   }
 }

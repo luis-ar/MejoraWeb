@@ -7,6 +7,7 @@ const GoogleAuth = ({
   setNombreUsuario,
   setImagenUsuario,
   setMuestraPrograma,
+  setCopiaCorreo,
 }) => {
   const onSuccess = async (credentialResponse) => {
     if (credentialResponse.credential) {
@@ -14,6 +15,7 @@ const GoogleAuth = ({
       const imagen = await payload.picture;
       setImagenUsuario(imagen);
       setNombreUsuario(payload.name);
+      setCopiaCorreo(payload.email);
       setMuestraBienvenida(true);
       setTimeout(() => {
         setMuestraBienvenida(false);
