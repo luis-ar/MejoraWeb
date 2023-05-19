@@ -61,14 +61,10 @@ const Registro = ({
         contraseña: contraseña,
         imagen: imagenUsuario,
       };
-<<<<<<< HEAD
       let res = await axios.post(
-        "http://localhost:3001/nuevo" || "https://mejora-web.vercel.app/nuevo",
+        "http://localhost:3001/nuevo" || "http://mejora-web.vercel.app/nuevo",
         data
       );
-=======
-      let res = await axios.post("http://localhost:3001/nuevo" || "http://mejora-web.vercel.app/nuevo", data);
->>>>>>> e556fbb616b05e13c95d431ed85d0ec4f492dd66
 
       setMuestraBienvenida(true);
       setContraseña("");
