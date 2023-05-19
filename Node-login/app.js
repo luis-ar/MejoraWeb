@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
 const app = express();
+require("dotenv").config({ path: "./.env" });
+const puerto = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(cors());
@@ -46,6 +48,6 @@ app.post("/nuevo", (req, res) => {
   });
 });
 
-app.listen(3001, () => {
-  console.log("Conectado en el puerto 3001");
+app.listen(puerto, () => {
+  console.log("Conectado en el puerto " + puerto);
 });
