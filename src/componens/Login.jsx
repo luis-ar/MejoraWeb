@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Error from "./Error";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import GoogleAuth from "./GoogleAuth";
-import datos from "../data/datos.json";
+import datos from "../../Node-login/datos1.json";
 
 import { useEffect } from "react";
 import PanelBienvenida from "./PanelBienvenida";
@@ -60,7 +60,7 @@ const Login = ({
     }
     if (pase) {
       const resultado = datos.filter(
-        (dato) => dato.correo == correo && dato.password == contraseña
+        (dato) => dato.correo == correo && dato.contraseña == contraseña
       );
       if (resultado.length > 0) {
         resultado.map(async (item) => {

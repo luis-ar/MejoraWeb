@@ -27,6 +27,7 @@ function App() {
           setNombreUsuario={setNombreUsuario}
           imagenUsuario={imagenUsuario}
           nombreUsuario={nombreUsuario}
+          setRegistro={setRegistro}
         />
       ) : !registro ? (
         <Login
@@ -61,6 +62,12 @@ function App() {
           recuperar={recuperar}
           setNombreUsuario={setNombreUsuario}
           nombreUsuario={nombreUsuario}
+          setImagenUsuario={setImagenUsuario}
+          setMuestraBienvenida={setMuestraBienvenida}
+          setMuestraPrograma={setMuestraPrograma}
+          muestraBienvenida={muestraBienvenida}
+          copiaCorreo={copiaCorreo}
+          setCopiaCorreo={setCopiaCorreo}
         />
       ) : (
         <Conoce setNosotros={setNosotros} setRegistro={setRegistro} />

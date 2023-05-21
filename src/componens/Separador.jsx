@@ -19,6 +19,8 @@ const Separador = ({
   setMuestraBienvenida,
   muestraBienvenida,
   setMuestraPrograma,
+  setCopiaCorreo,
+  copiaCorreo,
 }) => {
   return (
     <>
@@ -38,6 +40,8 @@ const Separador = ({
           setImagenUsuario={setImagenUsuario}
           imagenUsuario={imagenUsuario}
           setMuestraPrograma={setMuestraPrograma}
+          copiaCorreo={copiaCorreo}
+          setCopiaCorreo={setCopiaCorreo}
         />
       ) : (
         <RecuperarCuenta

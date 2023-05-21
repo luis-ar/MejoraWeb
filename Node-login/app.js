@@ -13,13 +13,13 @@ app.post("/nuevo", (req, res) => {
   const nombreUsuario = req.body.nombreUsuario;
   const correo = req.body.correo;
   const contraseña = req.body.contraseña;
-  const imagen = req.body.imagen;
+  const imagenUsuario = req.body.imagenUsuario;
   const datos = {
     id,
     nombreUsuario,
     correo,
     contraseña,
-    imagen,
+    imagenUsuario,
   };
 
   fs.readFile("datos1.json", "utf8", (err, data) => {

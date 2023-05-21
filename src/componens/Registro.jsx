@@ -21,6 +21,7 @@ const Registro = ({
   setImagenUsuario,
   imagenUsuario,
   setMuestraPrograma,
+  setCopiaCorreo,
 }) => {
   const mostrarContraseña = () => {
     const inputContra = document.querySelector(".inputPassword");
@@ -59,13 +60,14 @@ const Registro = ({
         nombreUsuario: nombreUsuario,
         correo: correo,
         contraseña: contraseña,
-        imagen: imagenUsuario,
+        imagenUsuario:
+          "https://assets.stickpng.com/images/585e4beacb11b227491c3399.png",
       };
       let res = await axios.post(
-        "http://localhost:3001/nuevo" || "http://mejora-web.vercel.app/nuevo",
+        "http://localhost:8000/nuevo" || "http://mejora-web.vercel.app/nuevo",
         data
       );
-
+      setCopiaCorreo(correo);
       setMuestraBienvenida(true);
       setContraseña("");
       setCorreo("");
@@ -73,8 +75,6 @@ const Registro = ({
         setMuestraBienvenida(false);
         setMuestraPrograma(true);
       }, 2000);
-
-      console.log(res);
     }
 
     setTimeout(() => {
